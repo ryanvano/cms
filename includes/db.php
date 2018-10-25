@@ -2,7 +2,7 @@
 
 $db["db_host"] = "localhost";
 $db["db_user"] = "root";
-$db["db_pwd"] = "";
+$db["db_pwd"] = "root";
 $db["db_database"] = "cms";
 
 foreach($db as $key => $value){

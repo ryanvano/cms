@@ -63,7 +63,7 @@ require './vendor/autoload.php';
 
                     $mail->Body = '<p>Please click to reset your password
 
-                    <a href="http://localhost:8888/cms/reset.php?email='.$email.'&token='.$token.' ">http://localhost:888/cms/reset.php?email='.$email.'&token='.$token.'</a>
+                    <a href="http://localhost:8888/reset.php?email='.$email.'&token='.$token.' ">http://localhost:888/reset.php?email='.$email.'&token='.$token.'</a>
 
 
 

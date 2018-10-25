@@ -50,7 +50,7 @@ function deleteRecord($table, $column, $condition){
     $stmt = mysqli_prepare($con, $query);
     $stmt->bind_param("s", $condition);
     $stmt->execute();
-    header("Location: /cms/admin/posts.php");
+    header("Location: /admin/posts.php");
 
 }
 

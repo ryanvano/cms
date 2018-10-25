@@ -29,13 +29,13 @@
                 <ul class="nav navbar-right navbar-nav">
                 <?php //right top menus
                     if(!aRole()){
-                        if($_SERVER['PHP_SELF'] == "/cms/registration.php"){
+                        if($_SERVER['PHP_SELF'] == "/registration.php"){
                             echo "<li class='active'><a href='registration.php'>Registration</a></li>";
                         } else {
                             echo "<li><a href='registration.php'>Registration</a></li>";
                         }
                     }
-                    if($_SERVER['PHP_SELF'] == "/cms/contact.php"){
+                    if($_SERVER['PHP_SELF'] == "/contact.php"){
                         echo "<li class='active'><a href='contact.php'>Contact</a></li>";
                     } else {
                         echo "<li><a href='contact.php'>Contact</a></li>";
@@ -46,7 +46,7 @@
                     <?php if(!aRole()): ?>
                         <li><a href='user_login.php'>Login</a></li>
                     <?php else: ?>
-                        <li><a href='/cms/includes/logout.php'>Logout</a></li>
+                        <li><a href='/includes/logout.php'>Logout</a></li>
                     <?php endif;
                     if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'){
                         if(isset($_GET['p_id'])){

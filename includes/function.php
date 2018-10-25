@@ -73,7 +73,7 @@ function loginUser($username, $userpassword){
         $_SESSION['role'] = $row['user_role'];
         $_SESSION['user_id'] = $row['user_id'];
         $_SESSION['adminTimeOut'] = time() + $config['adminTimeOut'];
-       header("Location: /cms/admin");
+       header("Location: /admin");
     }
 }
 
